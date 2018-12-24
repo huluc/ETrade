@@ -1,0 +1,16 @@
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.BLL.dll
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.BLL.pdb
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.DAL.dll
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.Entity.dll
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.Interfaces.dll
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\EntityFramework.dll
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.DAL.pdb
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.DAL.dll.config
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.Entity.pdb
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\ETrade.Interfaces.pdb
+D:\PROJELER\ETrade\ETrade.BLL\bin\Debug\EntityFramework.xml
+D:\PROJELER\ETrade\ETrade.BLL\obj\Debug\ETrade.BLL.csprojAssemblyReference.cache
+D:\PROJELER\ETrade\ETrade.BLL\obj\Debug\ETrade.BLL.csproj.CoreCompileInputs.cache
+D:\PROJELER\ETrade\ETrade.BLL\obj\Debug\ETrade.BLL.csproj.CopyComplete
+D:\PROJELER\ETrade\ETrade.BLL\obj\Debug\ETrade.BLL.dll
+D:\PROJELER\ETrade\ETrade.BLL\obj\Debug\ETrade.BLL.pdb

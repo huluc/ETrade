@@ -1,0 +1,6 @@
+D:\PROJELER\ETrade\ETrade.Entity\bin\Debug\ETrade.Entity.dll
+D:\PROJELER\ETrade\ETrade.Entity\bin\Debug\ETrade.Entity.pdb
+D:\PROJELER\ETrade\ETrade.Entity\obj\Debug\ETrade.Entities.csprojAssemblyReference.cache
+D:\PROJELER\ETrade\ETrade.Entity\obj\Debug\ETrade.Entities.csproj.CoreCompileInputs.cache
+D:\PROJELER\ETrade\ETrade.Entity\obj\Debug\ETrade.Entity.dll
+D:\PROJELER\ETrade\ETrade.Entity\obj\Debug\ETrade.Entity.pdb

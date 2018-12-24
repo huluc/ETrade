@@ -1,0 +1,16 @@
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\ETrade.DAL.dll.config
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\ETrade.DAL.dll
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\ETrade.DAL.pdb
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\EntityFramework.dll
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\ETrade.Entity.dll
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\ETrade.Entity.pdb
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\EntityFramework.xml
+D:\PROJELER\ETrade\ETrade.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.csprojAssemblyReference.cache
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.csproj.CoreCompileInputs.cache
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.csproj.CopyComplete
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.dll
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.pdb
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.Migrations.x1.resources
+D:\PROJELER\ETrade\ETrade.DAL\obj\Debug\ETrade.DAL.csproj.GenerateResource.cache

@@ -1,0 +1,9 @@
+D:\PROJELER\ETrade\ETrade.Interfaces\bin\Debug\ETrade.Interfaces.dll
+D:\PROJELER\ETrade\ETrade.Interfaces\bin\Debug\ETrade.Interfaces.pdb
+D:\PROJELER\ETrade\ETrade.Interfaces\bin\Debug\ETrade.Entity.dll
+D:\PROJELER\ETrade\ETrade.Interfaces\bin\Debug\ETrade.Entity.pdb
+D:\PROJELER\ETrade\ETrade.Interfaces\obj\Debug\ETrade.Interfaces.csprojAssemblyReference.cache
+D:\PROJELER\ETrade\ETrade.Interfaces\obj\Debug\ETrade.Interfaces.csproj.CoreCompileInputs.cache
+D:\PROJELER\ETrade\ETrade.Interfaces\obj\Debug\ETrade.Interfaces.csproj.CopyComplete
+D:\PROJELER\ETrade\ETrade.Interfaces\obj\Debug\ETrade.Interfaces.dll
+D:\PROJELER\ETrade\ETrade.Interfaces\obj\Debug\ETrade.Interfaces.pdb

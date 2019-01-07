@@ -7,6 +7,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ETrade.Interfaces;
+using ETrade.MvcWebUI.Controllers.Model;
+using ETrade.MvcWebUI.Models;
 
 namespace ETrade.MvcWebUI.Controllers
 {
@@ -23,10 +25,23 @@ namespace ETrade.MvcWebUI.Controllers
             _productService = productService;
         }
 
-        public ActionResult Index()
+        private int PageSize = 3;
+        public ActionResult Index(int page=1)
         {
-            List<Product> products =  _productService.GetAll();
-            return View(products);
+
+            List<Product> products = _productService.GetAll();
+            return View(new ProductViewModel()
+            {
+                Products=products.Skip((page-1)*PageSize).Take(PageSize).ToList(),
+                PagingInfo = new PagingInfo
+                {
+                    ItemsPerPage=PageSize,
+                    TotalItems=products.Count,
+                    CurrentPage=page
+                }
+            });
         }
     }
+
+
 }

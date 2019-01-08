@@ -20,8 +20,10 @@ namespace ETrade.MvcWebUI.HtmlHelpers
                 var li = new TagBuilder("li");
                 if (i==pagingInfo.CurrentPage)
                     li.AddCssClass("active");
+                li.AddCssClass("page-item");
                 var a = new TagBuilder("a");
                 a.MergeAttribute("href", action(i));
+                a.AddCssClass("page-link");
                 a.SetInnerText(i.ToString());
                 li.InnerHtml = a.ToString();
                 ul.InnerHtml += li.ToString();

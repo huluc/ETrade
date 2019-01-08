@@ -25,6 +25,6 @@
     </div>
 }
     
-        @Html.Pager(Model.PagingInfo, x => Url.Action("Index", new { page = Model.PagingInfo.CurrentPage }))
+        @Html.Pager(Model.PagingInfo, index => Url.Action("Index", "Product", new { page = index }))
     
 

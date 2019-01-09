@@ -25,6 +25,7 @@ namespace ETrade.MvcWebUI.Infrastructure
         private void AddBllBindings()
         {
             _ninjectKernel.Bind<IProductService>().To<ProductManager>().WithConstructorArgument("productDal",new EfProductDal());
+            _ninjectKernel.Bind<ICategoryService>().To<CategoryManager>().WithConstructorArgument("categoryDal", new EfCategoryDal());
         }
 
         protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)

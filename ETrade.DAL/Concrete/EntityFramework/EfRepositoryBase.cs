@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ETrade.DAL.Concrete.EntityFramework
 {
-    public class EFRepositoryBase<TEntity, TContext> : IRepository<TEntity> where TContext : DbContext, new() 
+    public class EfRepositoryBase<TEntity, TContext> : IRepository<TEntity> where TContext : DbContext, new() 
       where TEntity : class, IEntity, new()
     {
         public void Add(TEntity entity)

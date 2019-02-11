@@ -25,7 +25,12 @@ namespace ETrade.BLL.Concrete
         {
             throw new NotImplementedException();
         }
-   
+
+        public List<Product> GetByCategoryId(int id) // Ayrı metot yazılmasındaki amaç; farklı bir UI da böyle bir metoda ihtiyaç duyulursa bu kodları tekrarlamaktan ve bu query i düşünmekten kurtulmak.  
+        {
+            return _productDal.GetAll(p => p.CategoryId == id);
+        }
+
         public List<Product> GetAll()
         {
             return _productDal.GetAll();

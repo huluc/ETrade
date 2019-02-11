@@ -17,7 +17,7 @@ namespace ETrade.MvcWebUI.Controllers
         //ProductManager _productManager = new ProductManager(new EfProductDal()); // Burada bağımlılık mevcut.
 
         private IProductService _productService;// Artık ister servis ister bll kullanabiliriz.
-                                               
+
         // Burada Ninject ile Controllerın Constructure ında hangi servis istenirse hangi concrete sınıf dönülecek bunu belirleyeceğiz.
         //Mesela Ninject' e burada ctor da IProductService gönderilirse productManager yolla diyebiliriz. 
         public ProductController(IProductService productService)
@@ -26,18 +26,19 @@ namespace ETrade.MvcWebUI.Controllers
         }
 
         private int PageSize = 3;
-        public ActionResult Index(int page=1)
+        public ActionResult Index(int categoryId = 0, int page = 1)
         {
-
-            List<Product> products = _productService.GetAll();
+            List<Product> products = categoryId == 0 ? _productService.GetAll() : _productService.GetByCategoryId(categoryId);
+            ViewBag.CurrentCategory = categoryId;
             return View(new ProductViewModel()
             {
-                Products=products.Skip((page-1)*PageSize).Take(PageSize).ToList(),
+                Products = products.Skip((page - 1) * PageSize).Take(PageSize).ToList(),
                 PagingInfo = new PagingInfo
                 {
-                    ItemsPerPage=PageSize,
-                    TotalItems=products.Count,
-                    CurrentPage=page
+                    ItemsPerPage = PageSize,
+                    TotalItems = products.Count,
+                    CurrentPage = page,
+                    CurrentCategory = categoryId
                 }
             });
         }

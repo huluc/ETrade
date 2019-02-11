@@ -16,7 +16,7 @@
                     <a href="#">@product.ProductName</a>
                 </h4>
                 <h5>@product.UnitPrice</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>    
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 <div class="card-footer">
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
@@ -24,7 +24,7 @@
         </div>
     </div>
 }
-    
-        @Html.Pager(Model.PagingInfo, index => Url.Action("Index", "Product", new { page = index }))
-    
+
+@Html.Pager(Model.PagingInfo, (index, category) => Url.Action("Index", "Product", new { page = index, categoryId=category }))
+
 

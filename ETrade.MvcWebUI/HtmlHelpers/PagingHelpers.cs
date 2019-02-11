@@ -9,25 +9,25 @@ namespace ETrade.MvcWebUI.HtmlHelpers
 {
     public static class PagingHelpers
     {
-        public static MvcHtmlString Pager(this HtmlHelper html, PagingInfo pagingInfo, Func<int,string> action)
+        public static MvcHtmlString Pager(this HtmlHelper html, PagingInfo pagingInfo, Func<int,int, string> action)
         {
             var ul = new TagBuilder("ul");
             ul.AddCssClass("pagination");
-            int pageCount = (int)Math.Ceiling((decimal) (pagingInfo.TotalItems / pagingInfo.ItemsPerPage)); 
+            int pageCount = (int)Math.Ceiling((decimal)pagingInfo.TotalItems / (decimal)pagingInfo.ItemsPerPage);
 
             for (int i = 1; i <= pageCount; i++)
             {
                 var li = new TagBuilder("li");
-                if (i==pagingInfo.CurrentPage)
+                if (i == pagingInfo.CurrentPage)
                     li.AddCssClass("active");
                 li.AddCssClass("page-item");
                 var a = new TagBuilder("a");
-                a.MergeAttribute("href", action(i));
+                a.MergeAttribute("href", action(i,pagingInfo.CurrentCategory));
                 a.AddCssClass("page-link");
                 a.SetInnerText(i.ToString());
                 li.InnerHtml = a.ToString();
                 ul.InnerHtml += li.ToString();
-               
+
 
             }
             return MvcHtmlString.Create(ul.ToString());
@@ -105,13 +105,3 @@ namespace ETrade.MvcWebUI.HtmlHelpers
 
     }
 }
-
-//< ul class="pagination">
-// <li><a href = "#" > 1 </ a ></ li >
-//< li class="active"><a href = "#" > 2 </ a ></ li >
-
-
-//< li >< a href="#">3</a></li>
-//<li><a href = "#" > 4 </ a ></ li >
-//< li >< a href="#">5</a></li>
-//</ul>

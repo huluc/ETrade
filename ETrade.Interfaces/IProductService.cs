@@ -26,5 +26,8 @@ namespace ETrade.Interfaces
 
         [OperationContract]
         void Delete(Product product);
+
+        [OperationContract]
+        List<Product> GetByCategoryId(int id);
     }
 }

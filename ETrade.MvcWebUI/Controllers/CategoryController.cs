@@ -16,9 +16,9 @@ namespace ETrade.MvcWebUI.Controllers
             _categoryService = categoryService;
         }
 
-
-        public ActionResult List()
+        public ActionResult List(int categoryId=0)
         {
+            ViewBag.CurrentCategory = categoryId;
             return PartialView(_categoryService.GetAll());
         }
     }

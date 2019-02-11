@@ -1,9 +1,12 @@
 ﻿@using ETrade.Entity.Concrete
 @model List<ETrade.Entity.Concrete.Category>
 <div class="list-group">
+
+    @Html.RouteLink("Tüm Kategoriler", new { action = "Index", controller = "Product" }, new { @class = ViewBag.CurrentCategory==0? "list-group-item active" : "list-group-item" })
+
     @foreach (Category category in Model)
     {
-      <a href = "#" class="list-group-item">@category.CategoryName</a>
+        @Html.ActionLink(@category.CategoryName, "Index", "Product", new { categoryId = @category.CategoryId }, new {@class = category.CategoryId == ViewBag.CurrentCategory ? "list-group-item active" :"list-group-item " })
     }
+
 </div>
-    

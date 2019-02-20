@@ -1,0 +1,40 @@
+﻿@model ETrade.Entity.Concrete.Cart
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cart</h2>
+<div class="container">
+    <h2>Condensed Table</h2>
+    <p>The .table-condensed class makes a table more compact by cutting cell padding in half:</p>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <td>Price</td>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cartLine in Model.Lines)
+            {
+                <tr>
+                    <td>@cartLine.Product.ProductName</td>
+                    <td>@cartLine.Product.UnitPrice</td>
+                    <td>@cartLine.Quantity</td>
+                    <td>@((cartLine.Product.UnitPrice * cartLine.Quantity).ToString("c"))</td>
+                   @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        @Html.Hidden("ProductId",@cartLine.Product.ProductId)
+                        <td><input type="submit" value="Remove from cart" /></td>
+                    }
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
